@@ -23,7 +23,7 @@ This enables native browser features such as **"Open in new tab"**, **"Copy link
 Clone the repository or copy the directive into your Angular project:
 
 ```bash
-git clone https://github.com/kadirkuzu/Angular-Custom-Router-Link.git
+git clone https://github.com/kadirkuzu/Angular-Custom-Router-Link-Directive.git
 ```
 
 ---
