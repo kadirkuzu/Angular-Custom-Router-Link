@@ -24,13 +24,17 @@ Clone the repository or copy the directive into your Angular project:
 
 ```bash
 git clone https://github.com/kadirkuzu/Angular-Custom-Router-Link.git
+```
 
-⚙️ Usage
+---
 
-✅ If using NgModules
+## ⚙️ Usage
 
-Add it into your module’s declarations array:
+### ✅ If using NgModules
 
+Add it into your module’s `declarations` array:
+
+```ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -49,9 +53,13 @@ import { CustomRouterLinkDirective } from './custom-router-link.directive';
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+```
 
-✅ If using Standalone Components
+### ✅ If using Standalone Components
+
 You can import the directive directly inside the component:
+
+```ts
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CustomRouterLinkDirective } from './custom-router-link.directive';
@@ -66,9 +74,11 @@ import { CustomRouterLinkDirective } from './custom-router-link.directive';
   `
 })
 export class AppComponent {}
+```
 
-Use in templates
+### ✅ Use in templates
 
+```html
 <!-- Example 1 -->
 <button [routerLink]="['/dashboard']">Go to Dashboard</button>
 
@@ -79,4 +89,12 @@ Use in templates
 >
   Products
 </div>
+```
 
+Both elements will behave as real links, so users can right-click and select **"Open in new tab"** or **"Copy link"**.
+
+---
+
+## 📜 License
+
+MIT License © [Ejder Kadir Kuzu](https://github.com/kadirkuzu)
